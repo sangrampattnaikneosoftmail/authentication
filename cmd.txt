@@ -1,0 +1,15 @@
+Run Server Locally
+===================
+
+step-1 (Create app Image)
+-------------------------
+docker build -t django-jwt .
+
+step-2 (Run Server)
+-------------------
+docker run -d -p 8000:8000 django-jwt
+
+
+Deployment of Server
+====================
+docker-compose up --build
